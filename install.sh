@@ -19,5 +19,5 @@ git clone https://github.com/mrxdevil404/crawler.git
 
 git clone https://github.com/devanshbatham/ParamSpider.git
 cd ParamSpider/
-sudo python3 setup.py install
+pip install .
 cd ../
