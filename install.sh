@@ -3,6 +3,7 @@
 #Installation of subdomain.sh tools ....
 #it's reqiure go lang to be installed...
 
+mkdir endpoints/
 git clone https://github.com/xnl-h4ck3r/waymore.git
 cd waymore
 pip3 install -r requirements.txt
