@@ -15,3 +15,10 @@ cd endpointCollect
 sudo chmod +x endpoint.sh install.sh
 sudo cp endpoint.sh /usr/local/bin/
 ```
+
+**Usage:**
+```
+endpoint.sh target.com
+```
+
+
