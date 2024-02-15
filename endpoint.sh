@@ -7,10 +7,9 @@ waybackurls $1|anew $HOME/endpointCollect/endpoints/$1.txt
 python3 $HOME/endpointCollect/crawler/crawler.py -n All -t $1 >>ali.txt
 cat ali.txt|grep "URL"|cut -d " " -f3 >>$HOME/endpointCollect/endpoints/$1.txt
 rm ali.txt
-python3 $HOME/endpointCollect/ParamSpider/paramspider.py --domain $1 --level high  -e js,eot,jpg,jpeg,gif,css,tif,tiff,png,ttf,otf,woff,woff2,ico,svg,txt -o param.txt
-cat param.txt| grep "http"|anew $HOME/endpointCollect/endpoints/$1.txt 
-rm param.txt
-rm -r output/*
+paramspider -d $1 
+cat results/$1.txt|anew $HOME/endpointCollect/endpoints/$1.txt 
+rm -rf output/*
 
 
 total=$(cat $HOME/endpointCollect/endpoints/$1.txt | wc  -l)
