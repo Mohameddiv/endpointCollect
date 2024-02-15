@@ -14,6 +14,6 @@ rm -rf output/*
 
 total=$(cat $HOME/endpointCollect/endpoints/$1.txt | wc  -l)
 echo "############################ All Endpoints for $1 :$total "
-echo "############################ All Endpoints for $1 here: $HOME/endpointCollect/endpoints/$1.txt "
+echo "############################ All Endpoints for $1 here: $HOME/endpointCollect/endpoints/$1.txt " 
 
 
