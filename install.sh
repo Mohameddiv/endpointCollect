@@ -10,6 +10,7 @@ sudo python setup.py install
 cd ../
 
 go install github.com/lc/gau/v2/cmd/gau@latest
+go install -v github.com/tomnomnom/anew@latest
 
 go install github.com/tomnomnom/waybackurls@latest
 
