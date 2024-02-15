@@ -14,6 +14,7 @@ git clone https://github.com/Mohameddiv/endpointCollect.git
 cd endpointCollect
 sudo chmod +x endpoint.sh install.sh
 sudo cp endpoint.sh /usr/local/bin/
+bash install.sh
 ```
 
 **Usage:**
