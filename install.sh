@@ -4,6 +4,7 @@
 #it's reqiure go lang to be installed...
 
 mkdir endpoints/
+pip install urlextract
 git clone https://github.com/xnl-h4ck3r/waymore.git
 cd waymore
 pip3 install -r requirements.txt
