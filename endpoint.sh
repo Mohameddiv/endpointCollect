@@ -1,4 +1,4 @@
-#!/bin/Bash
+#!/bin/bash
 
 python3 $HOME/endpointCollect/waymore/waymore.py -i $1  -mode U
 cat $HOME/endpointCollect/waymore/waymore.py/results/$1/waymore.txt|anew $HOME/endpointCollect/endpoints/$1.txt && rm -rf $HOME/endpointCollect/waymore/results/$1/waymore.txt
