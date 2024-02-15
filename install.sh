@@ -19,5 +19,5 @@ git clone https://github.com/mrxdevil404/crawler.git
 
 git clone https://github.com/devanshbatham/ParamSpider.git
 cd ParamSpider/
-pip install .
+sudo pip install .
 cd ../
