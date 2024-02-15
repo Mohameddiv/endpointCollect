@@ -21,5 +21,5 @@ bash install.sh
 ```
 endpoint.sh target.com
 ```
-
+**Don't** forget to add apikeys to waymore `config.yaml` file
 
