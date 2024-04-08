@@ -8,7 +8,8 @@ pip install urlextract
 git clone https://github.com/xnl-h4ck3r/waymore.git
 cd waymore
 pip3 install -r requirements.txt
-sudo python3 setup.py install
+#sudo python3 setup.py install
+pip install waymore
 cd ../
 
 go install github.com/lc/gau/v2/cmd/gau@latest
