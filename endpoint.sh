@@ -1,6 +1,6 @@
 #!/bin/bash
 
-waymore -i $1  -mode U
+python3 $HOME/endpointCollect/waymore/waymore/waymore.py -i $1  -mode U
 cat results/$1/waymore.txt|anew $HOME/endpointCollect/endpoints/$1.txt && rm -rf results/$1/waymore.txt
 gau $1 |anew $HOME/endpointCollect/endpoints/$1.txt
 waybackurls $1|anew $HOME/endpointCollect/endpoints/$1.txt
