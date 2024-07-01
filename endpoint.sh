@@ -1,7 +1,7 @@
 #!/bin/bash
 
 python3 $HOME/endpointCollect/waymore/waymore/waymore.py -i $1  -mode U -oU $HOME/endpointCollect/endpoints/$1.txt
-cat $HOME/.config/waymore/results/$1/waymore.txt|anew $HOME/endpointCollect/endpoints/$1.txt && rm -rf $HOME/.config/waymore/results/$1/waymore.txt
+#cat $HOME/.config/waymore/results/$1/waymore.txt|anew $HOME/endpointCollect/endpoints/$1.txt && rm -rf $HOME/.config/waymore/results/$1/waymore.txt
 gau $1 |anew $HOME/endpointCollect/endpoints/$1.txt
 waybackurls $1|anew $HOME/endpointCollect/endpoints/$1.txt
 python3 $HOME/endpointCollect/crawler/crawler.py -n All -t $1 >>ali.txt
