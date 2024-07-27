@@ -18,6 +18,7 @@ go install -v github.com/tomnomnom/anew@latest
 go install github.com/tomnomnom/waybackurls@latest
 go install github.com/bp0lr/gauplus@latest
 go install github.com/hakluke/hakrawler@latest
+go install github.com/jaeles-project/gospider@latest
 #sudo cp $HOME/go/bin/* /usr/local/bin
 
 git clone https://github.com/mrxdevil404/crawler.git
