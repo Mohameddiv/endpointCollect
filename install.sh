@@ -16,6 +16,9 @@ go install github.com/lc/gau/v2/cmd/gau@latest
 go install -v github.com/tomnomnom/anew@latest
 
 go install github.com/tomnomnom/waybackurls@latest
+go install github.com/bp0lr/gauplus@latest
+go install github.com/hakluke/hakrawler@latest
+#sudo cp $HOME/go/bin/* /usr/local/bin
 
 git clone https://github.com/mrxdevil404/crawler.git
 
