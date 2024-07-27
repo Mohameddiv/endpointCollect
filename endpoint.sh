@@ -5,6 +5,7 @@ python3 $HOME/endpointCollect/waymore/waymore/waymore.py -i $1  -mode U -oU $HOM
 gau $1 |anew $HOME/endpointCollect/endpoints/$1.txt
 waybackurls $1|anew $HOME/endpointCollect/endpoints/$1.txt
 echo "$1" |  (gauplus || hakrawler)| grep -Ev "\.(jpeg|jpg|png|ico|woff|svg|css|ico|woff|ttf)$" |anew $HOME/endpointCollect/endpoints/$1.txt
+gospider -s https://$1 -a -w -r --subs|  grep -Eo "(http|https)://[a-zA-Z0-9./?=_%:-]*"|anew $HOME/endpointCollect/endpoints/$1.txt
 python3 $HOME/endpointCollect/crawler/crawler.py -n All -t $1 >>ali.txt
 cat ali.txt|grep "URL"|cut -d " " -f3 >>$HOME/endpointCollect/endpoints/$1.txt
 rm ali.txt
